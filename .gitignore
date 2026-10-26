@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local runtime / test artifacts
+*.db
+*.db-shm
+*.db-wal
+*.pid
+.shrt-test/
+coverage/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Env
+.env
+.env.local

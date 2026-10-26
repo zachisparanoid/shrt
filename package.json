@@ -1,0 +1,51 @@
+{
+  "name": "shrt",
+  "version": "1.0.0",
+  "description": "Fast, self-contained URL shortener CLI \u2014 remote providers (is.gd/tinyurl/cleanuri) out of the box, or a local self-hosted SQLite shortener with a built-in redirect server.",
+  "type": "module",
+  "bin": {
+    "shrt": "./bin/shrt.js"
+  },
+  "exports": {
+    ".": "./src/cli.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "test:watch": "node --test --watch \"test/**/*.test.js\"",
+    "start": "node bin/shrt.js",
+    "shrt": "node bin/shrt.js"
+  },
+  "keywords": [
+    "cli",
+    "url-shortener",
+    "is.gd",
+    "tinyurl",
+    "sqlite"
+  ],
+  "author": "zachisparanoid",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "cli-table3": "^0.6.5",
+    "commander": "^13.1.0",
+    "nanoid": "^5.1.5",
+    "picocolors": "^1.1.1",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "homepage": "https://github.com/zachisparanoid/shrt#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachisparanoid/shrt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zachisparanoid/shrt/issues"
+  }
+}
